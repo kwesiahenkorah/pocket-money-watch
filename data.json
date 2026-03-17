@@ -1,0 +1,53 @@
+{
+    "balance": 1890,
+    "expenses": [
+        {
+            "amount": 20,
+            "category": "other",
+            "date": "2026-03-17 13:49:02.483956"
+        },
+        {
+            "amount": 770,
+            "category": "other",
+            "date": "2026-03-17 14:05:59.887884"
+        },
+        {
+            "amount": 400,
+            "category": "transport",
+            "date": "2026-03-17 14:09:34.964114"
+        },
+        {
+            "amount": 400,
+            "category": "transport",
+            "date": "2026-03-17 14:10:16.298097"
+        },
+        {
+            "amount": 80,
+            "category": "food",
+            "description": "spent 80 food",
+            "date": "2026-03-17 14:15:47.981458"
+        },
+        {
+            "amount": 200,
+            "category": "food",
+            "description": "spent 200 food",
+            "date": "2026-03-17 14:26:59.037733"
+        },
+        {
+            "amount": 40,
+            "category": "transport",
+            "description": "spent 40 transport",
+            "date": "2026-03-17 14:27:19.326173"
+        }
+    ],
+    "income": [
+        {
+            "amount": 800,
+            "date": "2026-03-17 13:48:52.216091"
+        },
+        {
+            "amount": 3000,
+            "date": "2026-03-17 14:09:16.171222"
+        }
+    ]
+}
