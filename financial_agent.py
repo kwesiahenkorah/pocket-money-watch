@@ -15,7 +15,7 @@ class FinancialAgent(Agent):
 
             perception = self.perceive(user_input)
             action = self.decide(perception)
-            await self.act(action, user_input)  # Made async
+            await self.act(action, user_input) 
 
         # PERCEIVE
         def perceive(self, user_input):
@@ -119,7 +119,6 @@ class FinancialAgent(Agent):
 
     def add_income(self, user_input):
         try:
-            # Extract amount from input (e.g., "income 500" or "income 500 from mom")
             words = user_input.split()
             amount = None
             for w in words:
@@ -133,7 +132,6 @@ class FinancialAgent(Agent):
 
             self.beliefs["balance"] += amount
 
-            # Extract source if mentioned
             source = "unknown"
             if "from" in user_input:
                 source = user_input.split("from")[1].strip()
@@ -159,7 +157,6 @@ class FinancialAgent(Agent):
         try:
             words = user_input.split()
             
-            # Extract amount
             amount = None
             for w in words:
                 if w.isdigit():
@@ -319,7 +316,7 @@ class FinancialAgent(Agent):
 
         print(f"📊 Your biggest expense is {highest_cat.upper()} ({highest_pct:.0f}% of total)")
 
-        # Category-specific insights (what you asked for!)
+        # Category-specific insights
         if highest_cat == "food":
             print("👉 Try eating at Bush canteen for a change 🍽️")
             print("👉 Consider cooking with roommates to save money 👥")
@@ -387,10 +384,8 @@ class FinancialAgent(Agent):
 # RUN AGENT
 
 async def main():
-    # You can change these credentials or use environment variables
     jid = "financialagent@xmpp.jp"
-    password = "Kwesi316"  # CHANGE THIS or use environment variable
-    
+    password = "Kwesi316"      
 
     agent = FinancialAgent(jid, password)
     await agent.start()
